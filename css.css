@@ -1,0 +1,883 @@
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: #111;
+   background: #FFFFFF;
+}
+
+/*Іба я зробив красиво */
+.Temu-scam,
+.hike-section,
+.sale-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* Тему макссссссссс */
+.Temu-scam {
+  min-height: 265px;
+  margin: 0 auto;
+  padding: 15px 24px 30px;
+  display: grid;
+  grid-template-columns: 195px minmax(0, 1fr);
+  gap: 22px;
+  color: #f4f5f5;
+  background: url("./imgz/banner.png") center / cover no-repeat;
+}
+
+.freeshit h1 {
+  margin: 4px 0 18px;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+}
+
+.s1-temu-p {
+  margin: 0;
+  color: #c2c7c7;
+  font-size: 11px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.freeshit a {
+  display: inline-block;
+  margin-top: 48px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.freeshit a span {
+  padding-left: 9px;
+  font-size: 18px;
+}
+
+.productemu-wrap {
+  min-width: 0;
+}
+
+.products-s1 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.products-s1 .product {
+  min-width: 0;
+  overflow: hidden;
+  color: #303436;
+  background: #fff;
+}
+
+.products-s1 .product-image {
+  height: 110px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.products-s1 .product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.products-s1 .product-info {
+  min-height: 72px;
+  padding: 6px 8px 5px;
+}
+
+.products-s1 .product-heading,
+.products-s1 .reviews,
+.products-s1 .purchase-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+
+.products-s1 .product-heading {
+  align-items: end;
+}
+
+.products-s1 .product h2 {
+  margin: 0 0 3px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.products-s1 .product-brand,
+.products-s1 .brand,
+.products-s1 .review-count {
+  color: #777;
+  font-size: 7px;
+}
+
+.products-s1 .product-description,
+.products-s1 .tagline {
+  max-width: 48%;
+  color: #777;
+  font-size: 7px;
+  text-align: right;
+}
+
+.products-s1 .reviews {
+  margin-top: 5px;
+}
+
+.products-s1 .stars {
+  color: #444;
+  font-size: 10px;
+}
+
+.products-s1 .purchase {
+  padding: 7px 8px 8px;
+  border-top: 1px solid #ddd;
+}
+
+.products-s1 .purchase-top {
+  margin-bottom: 7px;
+}
+
+.products-s1 .price {
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.products-s1 .icons {
+  color: #444;
+  font-size: 12px;
+}
+
+.products-s1 .buy-button {
+  width: 100%;
+  min-height: 20px;
+  border: 0;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  font-size: 8px;
+  cursor: pointer;
+}
+
+.products-s1 .buy-button:hover {
+  background: #444;
+}
+
+.hike-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.hike-head-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.hike-head-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #555252;
+  text-decoration: none;
+}
+
+.hike-head-link span {
+  color: #a87310;
+  font-size: 16px;
+}
+
+.hike-head-link:hover {
+  color: #d49218;
+}
+
+.hike-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.hike-card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+
+.hike-card-image {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.hike-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.hike-card-title {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hike-card-minitext {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #999;
+}
+
+
+
+.hike-card-rating {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+.hike-card-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.hike-card-price {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.hike-card-icons {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.hike-card-btn {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #e8a62d;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hike-card-btn:hover {
+  background: #d3951f;
+}
+
+/* точки*/
+.hike-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.hike-dot {
+  width: 14px;
+  height: 3px;
+  background: #ddd;
+  border-radius: 2px;
+}
+
+.hike-dot-active {
+  background: #e8a62d;
+}
+
+
+
+
+.sale-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #222;
+}
+
+
+.sale-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.sale-head-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.sale-head-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #555;
+  text-decoration: none;
+}
+
+.sale-head-link span {
+  color: #e8a62d;
+  font-size: 16px;
+}
+
+.sale-head-link:hover {
+  color: #e8a62d;
+}
+
+
+.sale-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.sale-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+/* Блок із картинкою */
+.sale-card-image {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.sale-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.sale-card-title {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.sale-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #999;
+}
+
+.sale-card-meta span:last-child {
+  text-align: right;
+}
+
+.sale-card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #999;
+}
+
+.sale-card-stars {
+  font-size: 12px;
+}
+
+.sale-card-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.sale-card-price {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.sale-card-icons {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.sale-card-btn {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #e8a62d;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(251, 167, 10, 0.35);
+}
+
+.sale-card-btn:hover {
+  background: #d3951f;
+}
+
+.flash-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+}
+
+.flash-card {
+  position: relative;
+  min-height: 190px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.flash-card-content {
+  position: relative;
+  z-index: 1;
+  max-width: 60%;
+  padding: 24px 18px;
+}
+
+.flash-card-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #111;
+}
+
+
+
+.flash-card-text {
+  margin: 20px 0 28px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: #111;
+}
+
+.flash-card-btn {
+  display: inline-block;
+  width: 186px;
+  padding: 11px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background: #e8a62d;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px rgba(106, 94, 71, 0.35);
+}
+
+.flash-card-btn:hover {
+  background: #a5751d;
+}
+.flash-card-img {
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  height: 150%;
+  max-height: 290px;
+  object-fit: contain;
+}
+
+
+
+
+
+.cntrlc-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  background: #fff;
+  color: #222;
+}
+
+
+.cntrlc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.cntrlc-head-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+.cntrlc-head-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+  text-decoration: none;
+}
+
+.cntrlc-head-link span {
+  color: #e8a62d;
+  font-size: 16px;
+}
+
+.cntrlc-head-link:hover {
+  color: #e8a62d;
+}
+
+
+.cntrlc-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cntrlc-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.cntrlc-card-image {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.cntrlc-card-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.cntrlc-card-title {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.cntrlc-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: #999;
+}
+
+
+
+.cntrlc-card-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #999;
+}
+
+.cntrlc-card-stars {
+  font-size: 12px;
+}
+
+.cntrlc-card-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.cntrlc-card-price {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.cntrlc-card-icons {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.cntrlc-card-btn {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #e8a62d;
+  color: #fff;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(232, 166, 45, 0.35);
+}
+
+.cntrlc-card-btn:hover {
+  background: #d3951f;
+}
+
+
+
+
+.footer-root {
+  width: 100%;
+  color: #fff;
+}
+
+/* Верхній блок із фоном */
+.footer-seo {
+  padding: 36px 24px 40px;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), /*Пасібо ші за цей граді*/
+    url("./imgz/banner.png") center / cover no-repeat;
+}
+
+.footer-seo-title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e8a62d;
+}
+
+.footer-seo-text {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 11px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* Темна частина */
+.footer-main {
+  background: #141414;
+  padding: 50px 24px 24px;
+}
+
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+/* Колонки */
+.footer-cols {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.1fr 1fr;
+  gap: 24px;
+}
+
+.footer-col-title {
+  margin: 0 0 22px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-link {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 11px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #e4e4e4;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #e8a62d;
+}
+
+.footer-line {
+  height: 1px;
+  margin: 24px 0;
+  background: #333;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 14px;
+  font-size: 11px;
+  line-height: 1.6;
+  color: #e4e4e4;
+}
+
+.footer-contact-icon {
+  width: 14px;
+  font-size: 11px;
+}
+
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #2a2a2a;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-social:hover {
+  background: #e8a62d;
+}
+
+/* Текст у колонках */
+.footer-text {
+  margin: 0 0 14px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #e4e4e4;
+}
+
+.footer-text-link {
+  color: #e8a62d;
+  text-decoration: none;
+}
+
+/* Розсилка */
+.footer-news {
+  display: flex;
+  margin-top: 16px;
+}
+
+.footer-news-input {
+  min-width: 0;
+  height: 26px;
+  padding: 0 8px;
+  border: 1px solid #444;
+  border-right: none;
+  background: #1f1f1f;
+  color: #fff;
+  font-size: 10px;
+  outline: none;
+}
+
+
+
+.footer-news-btn {
+  width: 28px;
+  height: 26px;
+  border: none;
+  background: #e8a62d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-news-btn:hover {
+  background: #d3951f;
+}
+
+.footer-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 9px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+.footer-check input {
+  margin-top: 2px;
+}
+
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.footer-bottom-left p {
+  margin: 0 0 7px;
+  font-size: 8px;
+  color: #ccc;
+}
+
+.footer-bottom-right {
+  font-size: 8px;
+  color: #ccc;
+}
