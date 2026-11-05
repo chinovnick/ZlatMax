@@ -1,6 +1,6 @@
+//nazar
 const API_URL = "products.json";
 
-// Як заповнювати кожен тип картки: селектори елементів усередині картки.
 const CARD_TYPES = {
   ".product": {
     img: ".product-img",
@@ -14,7 +14,7 @@ const CARD_TYPES = {
   ".hike-card": {
     img: ".hike-card-image img",
     title: ".hike-card-title",
-    meta: ".hike-card-minitext", // два <span>: бренд + короткий опис
+    meta: ".hike-card-minitext", 
     reviews: ".hike-card-rating",
     price: ".hike-card-price",
     button: ".hike-card-btn",
@@ -64,7 +64,6 @@ function fillCard(card, p, sel) {
   const reviews = p.reviewsCount + " відгуків";
   const reviewsEl = card.querySelector(sel.reviews);
   if (reviewsEl) {
-    // у hike-card зірки й текст лежать в одному елементі
     reviewsEl.textContent = reviewsEl.matches(".hike-card-rating")
       ? "⭐⭐⭐⭐⭐ " + reviews
       : reviews;

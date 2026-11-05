@@ -1,12 +1,8 @@
+/* nazar */
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat", Arial, sans-serif;
-}
-
-body {
-  margin: 0;
-  color: #111;
-   background: #FFFFFF;
 }
 
 /*Іба я зробив красиво */
@@ -529,15 +525,11 @@ body {
 .flash-card-img {
   position: absolute;
   right: -10px;
-  bottom: -20px;
+  bottom: -10px;
   height: 150%;
-  max-height: 290px;
+  max-height: 200px;
   object-fit: contain;
 }
-
-
-
-
 
 .cntrlc-section {
   width: 100%;
